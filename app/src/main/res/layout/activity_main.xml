@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.blackmask.retrofitimageupload.MainActivity">
+
+<ImageView
+    android:id="@+id/imageview"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"/>
+    <!--android:visibility="gone"/>-->
+    <EditText
+        android:id="@+id/imagetitle"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:hint="enter image title"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/choosebn"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagetitle"
+        android:text="Choose image "
+        android:onClick="clickChooseImage"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/uploadbn"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choosebn"
+        android:onClick="uploadImage"
+        android:text="upload image "
+        android:enabled="false"
+        android:layout_marginTop="25dp"/>
+
+</RelativeLayout>
